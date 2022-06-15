@@ -55,7 +55,7 @@ const state: State = {
     hoveredNodeChildren: [],
 }
 
-const ACTIVE_CHILDREN = 2
+const ACTIVE_CHILDREN = -1
 
 const colors = {
     gray_ultralight: "#fcfcfc",
@@ -200,7 +200,8 @@ const create_graph = (course_code, input_data: {
             state.hoveredNodeChildren = []
         } else {
             state.activeNode = node
-            state.activeNodeChildren = rec_find_children(node, highlight_children)
+            const parents = highlight_children > 0 && input_data[node].parents ? input_data[node].parents : []
+            state.activeNodeChildren = [...parents, ...rec_find_children(node, highlight_children)]
             state.hoveredNode = null
             state.hoveredNodeChildren = []
         }
@@ -209,7 +210,8 @@ const create_graph = (course_code, input_data: {
     });
     renderer.on("enterNode", ({ node }) => {
         state.hoveredNode = node
-        state.hoveredNodeChildren.push(...rec_find_children(node, highlight_children))
+        const parents = highlight_children > 0 && input_data[node].parents ? input_data[node].parents : []
+        state.hoveredNodeChildren = [...parents, ...rec_find_children(node, highlight_children)]
 
         renderer.refresh();
     });
@@ -234,7 +236,7 @@ const create_graph = (course_code, input_data: {
                 /* @ts-ignore */
                 res.labelColor = res.hoverLabelColor;
                 res.highlighted = true;
-            } else if (state.activeNodeChildren.includes(node) || graph.neighbors(state.activeNode).includes(node)) {
+            } else if (state.activeNodeChildren.includes(node)) {
                 /* @ts-ignore */
                 res.color = res.typeColor;
                 /* @ts-ignore */
@@ -256,7 +258,7 @@ const create_graph = (course_code, input_data: {
 
         if (state.hoveredNode) {
             if (
-                state.hoveredNode === node || state.hoveredNodeChildren.includes(node) || graph.neighbors(state.hoveredNode).includes(node)
+                state.hoveredNode === node || state.hoveredNodeChildren.includes(node)
             )
             {
                 /* @ts-ignore */
@@ -280,7 +282,7 @@ const create_graph = (course_code, input_data: {
         const source = graph.source(edge)
 
         if (state.activeNode) {
-            const nodes = [state.activeNode, ...state.activeNodeChildren, ...graph.neighbors(state.activeNode)]
+            const nodes = [state.activeNode, ...state.activeNodeChildren]
             if (
                 nodes.includes(target) &&
                 nodes.includes(source)
@@ -300,7 +302,7 @@ const create_graph = (course_code, input_data: {
         }
 
         if (state.hoveredNode) {
-            const nodes = [state.hoveredNode, ...state.hoveredNodeChildren, ...graph.neighbors(state.hoveredNode)]
+            const nodes = [state.hoveredNode, ...state.hoveredNodeChildren]
             if (nodes.includes(target) && nodes.includes(source))
             {
                 if (graph.getNodeAttribute(target, 'nodeType') === 'video' || graph.getNodeAttribute(source, 'nodeType') === 'video') {
@@ -378,7 +380,8 @@ const select_and_create = (input) => {
         alert("No course specified")
     }
 
-    const highlight_children = parseInt(params['c']) || ACTIVE_CHILDREN
+    const c = parseInt(params["c"])
+    const highlight_children = c === undefined ? ACTIVE_CHILDREN : c
 
     create_graph(params["course_code"], input[params["course_code"]], highlight_children)
 }
