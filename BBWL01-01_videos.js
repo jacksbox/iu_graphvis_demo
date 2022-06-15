@@ -1,0 +1,496 @@
+export default {
+    "glossentry_Outsourcing": [],
+    "glossentry_Sektoren": [
+      {
+        "kalturaId": "1_wj0fg67c",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_wj0fg67c/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_wj0fg67c/version/100011",
+        "name": "BBWL01-01_VL_04_Lektion 1.3_Strategisches Dreieck und strategische Wettbewerbsfaktoren",
+        "contentId": "1_wj0fg67c"
+      },
+      {
+        "kalturaId": "1_y9clo1vp",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_y9clo1vp/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_y9clo1vp/version/100011",
+        "name": "BBWL01-01 04.06.2020",
+        "contentId": "1_y9clo1vp"
+      },
+      {
+        "kalturaId": "1_d65ajnl4",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_d65ajnl4/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_d65ajnl4/version/100011",
+        "name": "BBWL01-01_VL_03_Lektion 1.2_Sektoren der Wirtschaft",
+        "contentId": "1_d65ajnl4"
+      }
+    ],
+    "glossentry_Arbeiten_4_0": [
+      {
+        "kalturaId": "1_l9zqu90s",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_l9zqu90s/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_l9zqu90s/version/100011",
+        "name": "BBWL01-01 12.05.2020",
+        "contentId": "1_l9zqu90s"
+      },
+      {
+        "kalturaId": "1_kzgkqt3n",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_kzgkqt3n/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_kzgkqt3n/version/100011",
+        "name": "Rechenbeispiel: Produktivität",
+        "contentId": "1_kzgkqt3n"
+      },
+      {
+        "kalturaId": "1_066bs4j1",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_066bs4j1/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_066bs4j1/version/100011",
+        "name": "Aktiengesellschaft (AG) im Überblick",
+        "contentId": "1_066bs4j1"
+      }
+    ],
+    "glossentry_Wettbewerb": [
+      {
+        "kalturaId": "1_wj0fg67c",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_wj0fg67c/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_wj0fg67c/version/100011",
+        "name": "BBWL01-01_VL_04_Lektion 1.3_Strategisches Dreieck und strategische Wettbewerbsfaktoren",
+        "contentId": "1_wj0fg67c"
+      }
+    ],
+    "glossentry_Mustererkennung": [],
+    "glossentry_Stakeholder": [],
+    "glossentry_System": [
+      {
+        "kalturaId": "1_5j9kesx5",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_5j9kesx5/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_5j9kesx5/version/100011",
+        "name": "BBWL01-01 26.05.2020",
+        "contentId": "1_5j9kesx5"
+      },
+      {
+        "kalturaId": "1_gfwlizyd",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_gfwlizyd/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_gfwlizyd/version/100011",
+        "name": "BBWL01-01 21.07.2020",
+        "contentId": "1_gfwlizyd"
+      },
+      {
+        "kalturaId": "1_ufcei9i8",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_ufcei9i8/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_ufcei9i8/version/100011",
+        "name": "BBWL01-01 29.10.2020",
+        "contentId": "1_ufcei9i8"
+      }
+    ],
+    "glossentry_Weiche_Daten": [
+      {
+        "kalturaId": "1_kzgkqt3n",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_kzgkqt3n/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_kzgkqt3n/version/100011",
+        "name": "Rechenbeispiel: Produktivität",
+        "contentId": "1_kzgkqt3n"
+      }
+    ],
+    "glossentry_Allgemeine_BWL": [
+      {
+        "kalturaId": "1_89juuzei",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_89juuzei/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_89juuzei/version/100001",
+        "name": "BBWL01-01 07.04.2020 aufgezeichntes Live Tutorium",
+        "contentId": "1_89juuzei"
+      },
+      {
+        "kalturaId": "1_emrjzt3d",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_emrjzt3d/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_emrjzt3d/version/100001",
+        "name": "BBWL01-01 24.09.2020",
+        "contentId": "1_emrjzt3d"
+      },
+      {
+        "kalturaId": "1_gfwlizyd",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_gfwlizyd/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_gfwlizyd/version/100011",
+        "name": "BBWL01-01 21.07.2020",
+        "contentId": "1_gfwlizyd"
+      }
+    ],
+    "glossentry_Betriebswirtschaftslehre": [
+      {
+        "kalturaId": "1_ugp44z1g",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_ugp44z1g/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_ugp44z1g/version/100011",
+        "name": "Institutioneller, funktionaler und instrumentaler Organisationsbegriff",
+        "contentId": "1_ugp44z1g"
+      }
+    ],
+    "glossentry_Modelle": [
+      {
+        "kalturaId": "1_lar3zubx",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_lar3zubx/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_lar3zubx/version/100011",
+        "name": " Beispiele: Funktionen betriebswirtschaftlicher Modelle",
+        "contentId": "1_lar3zubx"
+      },
+      {
+        "kalturaId": "1_m8jmiufe",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_m8jmiufe/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_m8jmiufe/version/100001",
+        "name": "BBWL01-01 07.07.2020",
+        "contentId": "1_m8jmiufe"
+      },
+      {
+        "kalturaId": "1_50406pto",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_50406pto/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_50406pto/version/100011",
+        "name": "Grundlagen: Produktlebenszyklus",
+        "contentId": "1_50406pto"
+      }
+    ],
+    "glossentry_Spezielle_BWL": [],
+    "glossentry_Gewinn": [
+      {
+        "kalturaId": "1_chg8t9kb",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_chg8t9kb/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_chg8t9kb/version/100011",
+        "name": "BBWL01-01 06.10.2020",
+        "contentId": "1_chg8t9kb"
+      },
+      {
+        "kalturaId": "1_5j9kesx5",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_5j9kesx5/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_5j9kesx5/version/100011",
+        "name": "BBWL01-01 26.05.2020",
+        "contentId": "1_5j9kesx5"
+      },
+      {
+        "kalturaId": "1_hhbvri22",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_hhbvri22/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_hhbvri22/version/100011",
+        "name": "BBWL01-01 13.10.2020",
+        "contentId": "1_hhbvri22"
+      }
+    ],
+    "glossentry__konomisches_Prinzip": [
+      {
+        "kalturaId": "1_5bfci3oz",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_5bfci3oz/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_5bfci3oz/version/100011",
+        "name": "BBWL01-01 25.06.2020 ",
+        "contentId": "1_5bfci3oz"
+      },
+      {
+        "kalturaId": "1_gfwlizyd",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_gfwlizyd/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_gfwlizyd/version/100011",
+        "name": "BBWL01-01 21.07.2020",
+        "contentId": "1_gfwlizyd"
+      },
+      {
+        "kalturaId": "1_pbbzzird",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_pbbzzird/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_pbbzzird/version/100011",
+        "name": "BBWL01-01 16.04.2020 aufgezeichntes Live Tutorium",
+        "contentId": "1_pbbzzird"
+      }
+    ],
+    "glossentry_Knappe_G_ter": [
+      {
+        "kalturaId": "1_ijmmq01k",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_ijmmq01k/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_ijmmq01k/version/100011",
+        "name": "BBWL01-01 11.08.2020",
+        "contentId": "1_ijmmq01k"
+      }
+    ],
+    "glossentry_Beschr_nkt_rational_handelnder_Mensch": [],
+    "glossentry_Homo_oeconomicus": [],
+    "glossentry_Human_Relations_Ansatz": [
+      {
+        "kalturaId": "1_m8jmiufe",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_m8jmiufe/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_m8jmiufe/version/100001",
+        "name": "BBWL01-01 07.07.2020",
+        "contentId": "1_m8jmiufe"
+      }
+    ],
+    "glossentry_Human_Resource_Model_": [
+      {
+        "kalturaId": "1_m8jmiufe",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_m8jmiufe/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_m8jmiufe/version/100001",
+        "name": "BBWL01-01 07.07.2020",
+        "contentId": "1_m8jmiufe"
+      }
+    ],
+    "glossentry_Rationalprinzip": [],
+    "glossentry_Gesamtkapital": [
+      {
+        "kalturaId": "1_ulc9d7pw",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_ulc9d7pw/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_ulc9d7pw/version/100011",
+        "name": "Kapitalbegriffe im Überblick",
+        "contentId": "1_ulc9d7pw"
+      },
+      {
+        "kalturaId": "1_hhbvri22",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_hhbvri22/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_hhbvri22/version/100011",
+        "name": "BBWL01-01 13.10.2020",
+        "contentId": "1_hhbvri22"
+      }
+    ],
+    "glossentry_Pr_ferenzordnung": [],
+    "glossentry_Rangordnung": [
+      {
+        "kalturaId": "1_y9clo1vp",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_y9clo1vp/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_y9clo1vp/version/100011",
+        "name": "BBWL01-01 04.06.2020",
+        "contentId": "1_y9clo1vp"
+      }
+    ],
+    "glossentry_SMART": [
+      {
+        "kalturaId": "1_aiddui5k",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_aiddui5k/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_aiddui5k/version/100011",
+        "name": "BBWL01-01 28.04.2020",
+        "contentId": "1_aiddui5k"
+      },
+      {
+        "kalturaId": "1_5bfci3oz",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_5bfci3oz/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_5bfci3oz/version/100011",
+        "name": "BBWL01-01 25.06.2020 ",
+        "contentId": "1_5bfci3oz"
+      },
+      {
+        "kalturaId": "1_3pm1epyo",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_3pm1epyo/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_3pm1epyo/version/100011",
+        "name": "BBWL01-01 17.11.2020",
+        "contentId": "1_3pm1epyo"
+      }
+    ],
+    "glossentry_Zeitliches_Ziel": [],
+    "glossentry_Zielbeziehung": [
+      {
+        "kalturaId": "1_cc1xh5yj",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_cc1xh5yj/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_cc1xh5yj/version/100001",
+        "name": "BBWL01-01 14.07.2020",
+        "contentId": "1_cc1xh5yj"
+      }
+    ],
+    "glossentry__konomische_Ziele": [
+      {
+        "kalturaId": "1_5bfci3oz",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_5bfci3oz/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_5bfci3oz/version/100011",
+        "name": "BBWL01-01 25.06.2020 ",
+        "contentId": "1_5bfci3oz"
+      },
+      {
+        "kalturaId": "1_gfwlizyd",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_gfwlizyd/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_gfwlizyd/version/100011",
+        "name": "BBWL01-01 21.07.2020",
+        "contentId": "1_gfwlizyd"
+      },
+      {
+        "kalturaId": "1_pbbzzird",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_pbbzzird/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_pbbzzird/version/100011",
+        "name": "BBWL01-01 16.04.2020 aufgezeichntes Live Tutorium",
+        "contentId": "1_pbbzzird"
+      }
+    ],
+    "glossentry_Entscheidungsprozess": [
+      {
+        "kalturaId": "1_p0lcqbkf",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_p0lcqbkf/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_p0lcqbkf/version/100011",
+        "name": "BBWL01-01 17.09.2020 ",
+        "contentId": "1_p0lcqbkf"
+      },
+      {
+        "kalturaId": "1_epf7a8fg",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_epf7a8fg/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_epf7a8fg/version/100011",
+        "name": "Einleitung: Unternehmerisches Handeln",
+        "contentId": "1_epf7a8fg"
+      },
+      {
+        "kalturaId": "1_hcdwzam8",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_hcdwzam8/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_hcdwzam8/version/100011",
+        "name": "Ergebnismatrix berechnen und verstehen",
+        "contentId": "1_hcdwzam8"
+      }
+    ],
+    "glossentry_Nutzwertanalyse": [
+      {
+        "kalturaId": "1_t1wuz0q4",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_t1wuz0q4/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_t1wuz0q4/version/100001",
+        "name": "Nutzwertanalyse bei der Standortwahl",
+        "contentId": "1_t1wuz0q4"
+      },
+      {
+        "kalturaId": "1_ymylgvd6",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_ymylgvd6/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_ymylgvd6/version/100011",
+        "name": "BBWL01-01 02.07.2020",
+        "contentId": "1_ymylgvd6"
+      },
+      {
+        "kalturaId": "1_ijmmq01k",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_ijmmq01k/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_ijmmq01k/version/100011",
+        "name": "BBWL01-01 11.08.2020",
+        "contentId": "1_ijmmq01k"
+      }
+    ],
+    "glossentry_Standortentscheidungen": [
+      {
+        "kalturaId": "1_ayutkujx",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_ayutkujx/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_ayutkujx/version/100011",
+        "name": "BBWL01-01_VL_22_Lektion 4.1_Weitere Standortentscheidungen",
+        "contentId": "1_ayutkujx"
+      },
+      {
+        "kalturaId": "1_q9qa1wqn",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_q9qa1wqn/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_q9qa1wqn/version/100011",
+        "name": "Einleitung: Konstitutive Entscheidungen",
+        "contentId": "1_q9qa1wqn"
+      },
+      {
+        "kalturaId": "1_t1wuz0q4",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_t1wuz0q4/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_t1wuz0q4/version/100001",
+        "name": "Nutzwertanalyse bei der Standortwahl",
+        "contentId": "1_t1wuz0q4"
+      }
+    ],
+    "glossentry_Ziel_der_Standortwahl": [],
+    "glossentry_Divisionale_Organisationsform": [
+      {
+        "kalturaId": "1_7icbcgdp",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_7icbcgdp/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_7icbcgdp/version/100011",
+        "name": "BBWL01-01_VL_28_Lektion 5.2_Funktionale und divisionale Organisation",
+        "contentId": "1_7icbcgdp"
+      }
+    ],
+    "glossentry_Einlinienmodell": [
+      {
+        "kalturaId": "1_kcg5h5z1",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_kcg5h5z1/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_kcg5h5z1/version/100011",
+        "name": "BBWL01-01_VL_27_Lektion 5.2_Einlinien-, Stablinien- und Mehrlinienmodell",
+        "contentId": "1_kcg5h5z1"
+      }
+    ],
+    "glossentry_Funktionale_Organisationsform": [
+      {
+        "kalturaId": "1_ugp44z1g",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_ugp44z1g/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_ugp44z1g/version/100011",
+        "name": "Institutioneller, funktionaler und instrumentaler Organisationsbegriff",
+        "contentId": "1_ugp44z1g"
+      },
+      {
+        "kalturaId": "1_7icbcgdp",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_7icbcgdp/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_7icbcgdp/version/100011",
+        "name": "BBWL01-01_VL_28_Lektion 5.2_Funktionale und divisionale Organisation",
+        "contentId": "1_7icbcgdp"
+      }
+    ],
+    "glossentry_Matrixorganisation": [
+      {
+        "kalturaId": "1_5j9kesx5",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_5j9kesx5/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_5j9kesx5/version/100011",
+        "name": "BBWL01-01 26.05.2020",
+        "contentId": "1_5j9kesx5"
+      },
+      {
+        "kalturaId": "1_f6co3ax6",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_f6co3ax6/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_f6co3ax6/version/100011",
+        "name": "BBWL01-01 29.09.2020",
+        "contentId": "1_f6co3ax6"
+      },
+      {
+        "kalturaId": "1_9umxwacx",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_9umxwacx/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_9umxwacx/version/100011",
+        "name": "BBWL01-01_VL_29_Lektion 5.2_Matrixorganisation und Anpassungen der Organisationsstruktur",
+        "contentId": "1_9umxwacx"
+      }
+    ],
+    "glossentry_Organisationsstrukturen": [
+      {
+        "kalturaId": "1_d43yttf8",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_d43yttf8/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_d43yttf8/version/100031",
+        "name": "Einleitung: Organisation",
+        "contentId": "1_d43yttf8"
+      },
+      {
+        "kalturaId": "1_ugp44z1g",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_ugp44z1g/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_ugp44z1g/version/100011",
+        "name": "Institutioneller, funktionaler und instrumentaler Organisationsbegriff",
+        "contentId": "1_ugp44z1g"
+      },
+      {
+        "kalturaId": "1_9umxwacx",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_9umxwacx/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_9umxwacx/version/100011",
+        "name": "BBWL01-01_VL_29_Lektion 5.2_Matrixorganisation und Anpassungen der Organisationsstruktur",
+        "contentId": "1_9umxwacx"
+      }
+    ],
+    "glossentry_Stabsstellen": [],
+    "glossentry_Organigramm": [
+      {
+        "kalturaId": "1_d43yttf8",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_d43yttf8/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_d43yttf8/version/100031",
+        "name": "Einleitung: Organisation",
+        "contentId": "1_d43yttf8"
+      },
+      {
+        "kalturaId": "1_hhbvri22",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_hhbvri22/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_hhbvri22/version/100011",
+        "name": "BBWL01-01 13.10.2020",
+        "contentId": "1_hhbvri22"
+      }
+    ],
+    "glossentry_Stelle": [
+      {
+        "kalturaId": "1_d43yttf8",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_d43yttf8/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_d43yttf8/version/100031",
+        "name": "Einleitung: Organisation",
+        "contentId": "1_d43yttf8"
+      },
+      {
+        "kalturaId": "1_50406pto",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_50406pto/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_50406pto/version/100011",
+        "name": "Grundlagen: Produktlebenszyklus",
+        "contentId": "1_50406pto"
+      },
+      {
+        "kalturaId": "1_aiddui5k",
+        "dataUrl": "https://cdnapisec.kaltura.com/p/2577952/sp/257795200/playManifest/entryId/1_aiddui5k/format/url/protocol/https",
+        "thumbnailUrl": "https://cfvod.kaltura.com/p/2577952/sp/257795200/thumbnail/entry_id/1_aiddui5k/version/100011",
+        "name": "BBWL01-01 28.04.2020",
+        "contentId": "1_aiddui5k"
+      }
+    ]
+  }
