@@ -20,7 +20,7 @@ function drawHover(context, data, settings) {
     var size = settings.labelSize, font = settings.labelFont, weight = settings.labelWeight;
     context.font = "".concat(weight, " ").concat(size, "px ").concat(font);
     // Then we draw the label background
-    context.fillStyle = data.hoverBackgroundColor;
+    context.fillStyle = data.labelBackgroundColor;
     context.shadowOffsetX = 0;
     context.shadowOffsetY = 0;
     context.shadowBlur = 8;

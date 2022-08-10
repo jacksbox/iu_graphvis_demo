@@ -2,6 +2,7 @@
     "compilerOptions": {
       "target": "es2017",
       "module": "commonjs",
+      "charset": "utf8",
       "sourceMap": true,
       "resolveJsonModule": true,
       "esModuleInterop": true
