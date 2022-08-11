@@ -171,14 +171,22 @@ class GraphRenderer {
                 }
             })
         })
+
+        let overall_count = 0
+        let overall_correct_count = 0
         quizResults.forEach(result => {
             if (filteredRawData[result.topic_code]) {
                 filteredRawData[result.topic_code]["result"] = (result.correct_count / result.total_count) * 100
+                overall_count += result.total_count
+                overall_correct_count += result.correct_count
             } else {
                 console.warn(`topic ${result.topic_code} not found`)
             }
-
         })
+        const overall_result = (overall_correct_count / overall_count) * 100
+        if (filteredRawData[courseCode]) {
+            filteredRawData[courseCode]["result"] = overall_result
+        }
 
         prepareGraph(this.graph, courseCode, filteredRawData)
 
@@ -279,9 +287,9 @@ class GraphRenderer {
 
             // add results to labels
             const labelMap = {
-                [NODE_STATE.INACTIVE]: '',
-                [NODE_STATE.HOVER]: res.label + (res.result !== null ? ` ${res.result}%` : ""),
-                [NODE_STATE.ACTIVE]: res.label + (res.result !== null ? ` ${res.result}%` : "")
+                [NODE_STATE.INACTIVE]: ' ',
+                [NODE_STATE.HOVER]: res.label + (res.result !== null ? ` ${res.result.toFixed(2)}%` : ""),
+                [NODE_STATE.ACTIVE]: res.label + (res.result !== null ? ` ${res.result.toFixed(2)}%` : "")
             }
 
             res.color = NODE_COLOR[res.nodeType][nodeState][NODE_ELEMENT.NODE];

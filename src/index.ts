@@ -73,7 +73,7 @@ const main = () => {
     }
 
     const renderGraph = () => {
-        const courseCode = state.get("gracourseCodephData")
+        const courseCode = state.get("courseCode")
         const graphData = state.get("graphData")
         const highlightChildrenLevel = state.get("highlightChildrenLevel")
         const renderTypes = state.get("renderTypes")
