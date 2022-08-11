@@ -9,8 +9,16 @@
     <body>
         <div id="container"></div>
         <aside>
-            <div id="courses"></div>
-            <div id="legend"></div>
+            <div id="courses" class="block"></div>
+            <div id="legend" class="block"></div>
+            <div id="quiz" class="block">
+                <div class="header"><strong>Quiz Results</strong></div>
+                <form>
+                    <!-- <div class="entry"><input placeholder="instance_id"/></div> -->
+                    <div class="entry"><button>load results</button></div>
+                    <div class="entry notification">&nbsp;</div>
+                </form>
+            </div>
         </aside>
         <div id="tipp">
             <strong>Hover</strong> or <strong>click</strong> a node to show its subtree (and parent).

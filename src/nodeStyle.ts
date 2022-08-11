@@ -9,6 +9,9 @@ export const COLOR = {
     blue_dark: "#413dff",
     green: "#25c26e",
     red: "#ff554a",
+    GREEN: '#70db94',
+    YELLOW: '#d7db70',
+    RED: '#db7e70',
 }
 
 export const NODE_STATE = {
@@ -23,6 +26,18 @@ export const NODE_ELEMENT = {
     NODE: "NODE",
     LABEL: "LABEL",
     LABEL_BODY: "LABEL_BODY",
+}
+
+export const RESULT_LEVEL = {
+    SUCCESS: 'SUCCESS',
+    WARNING: 'WARNING',
+    DANGER: 'DANGER',
+}
+
+export const RESULT_COLOR = {
+    [RESULT_LEVEL.SUCCESS]: COLOR.GREEN,
+    [RESULT_LEVEL.WARNING]: COLOR.YELLOW,
+    [RESULT_LEVEL.DANGER]: COLOR.RED
 }
 
 export const NODE_COLOR = {

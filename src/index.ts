@@ -13,8 +13,37 @@ import {
 } from './consts'
 import axios from 'axios'
 
+
+class AppState {
+    state
+    constructor(initialState) {
+        this.state = {...initialState}
+    }
+
+    set = (key, value) => {
+        this.state[key] = value
+    }
+
+    get = (key) => {
+        return this.state[key]
+    }
+}
+
 const main = () => {
-    const app = async (courseCode, graphRenderer) => {
+    const state = new AppState({
+        courseCode: Object.values(AVAILABLE_COURSES)[0],
+        graphData: null,
+        highlightChildrenLevel: DEFAULT_HIGHLIGHT_LEVEL,
+        renderTypes: null,
+        quizResult: [],
+    })
+
+    const container = document.getElementById("container");
+    const graphRenderer = new GraphRenderer(container)
+
+    const loadCourse = async () => {
+        const courseCode = state.get("courseCode")
+
         let courseData
         try {
             const response = await axios.get(`data/${courseCode}.json`)
@@ -34,14 +63,40 @@ const main = () => {
             console.warn('No video data found')
         }
 
-        const highlightChildrenLevel = DEFAULT_HIGHLIGHT_LEVEL
-        const availableRenderTypes = [...AVAILABLE_RENDER_TYPES, ...(videoData ? [NODE_TYPES.VIDEO] : [])]
-        const renderTypes = availableRenderTypes
+        state.set("courseData", courseData)
+        state.set("videoData", videoData)
 
-        const data = prepare(courseData, videoData)
+        const graphData = prepare(courseData, videoData)
+        state.set("graphData", graphData)
 
-        graphRenderer.update(courseCode, data, highlightChildrenLevel, renderTypes)
+        resetRenderTypes()
+    }
 
+    const renderGraph = () => {
+        const courseCode = state.get("gracourseCodephData")
+        const graphData = state.get("graphData")
+        const highlightChildrenLevel = state.get("highlightChildrenLevel")
+        const renderTypes = state.get("renderTypes")
+        const quizResult = state.get("quizResult")
+
+        graphRenderer.update(courseCode, graphData, highlightChildrenLevel, renderTypes, quizResult)
+
+        updateLegend()
+    }
+
+    const updateLegend = () => {
+        const renderTypes = state.get("renderTypes")
+        document.querySelectorAll('#legend .entry').forEach(element => {
+            const type = element.getAttribute('data-type')
+            /* @ts-ignore */
+            element.querySelector(".circle").style.backgroundColor = renderTypes.includes(type)
+                ? NODE_COLOR[type][NODE_STATE.ACTIVE][NODE_ELEMENT.NODE]
+                : NODE_COLOR[DEFAULT_NODE_TYPE][NODE_STATE.DEFAULT][NODE_ELEMENT.NODE]
+        })
+    }
+
+    const renderLegend = () => {
+        const availableRenderTypes = state.get("availableRenderTypes")
 
         document.querySelector("#legend").innerHTML = `
             <div class="header"><strong>Legend:</strong></div>
@@ -59,18 +114,6 @@ const main = () => {
             `).join('')}
         `
 
-        const updateLegend = (activeRenderTypes) => {
-            document.querySelectorAll('#legend .entry').forEach(element => {
-                const type = element.getAttribute('data-type')
-                /* @ts-ignore */
-                element.querySelector(".circle").style.backgroundColor = activeRenderTypes.includes(type)
-                    ? NODE_COLOR[type][NODE_STATE.ACTIVE][NODE_ELEMENT.NODE]
-                    : NODE_COLOR[DEFAULT_NODE_TYPE][NODE_STATE.DEFAULT][NODE_ELEMENT.NODE]
-            })
-
-        }
-        updateLegend(renderTypes)
-
         document.querySelectorAll("#legend .entry").forEach(element => {
             element.addEventListener("click", e => {
                 const target = e.target as HTMLElement;
@@ -83,22 +126,59 @@ const main = () => {
                         break;
                     }
                 }
-                graphRenderer.update(courseCode, data, highlightChildrenLevel, updatedRenderTypes)
-                updateLegend(updatedRenderTypes)
+                state.set('renderTypes', updatedRenderTypes)
+                renderGraph()
             })
         })
     }
 
-    const container = document.getElementById("container");
-    const graphRenderer = new GraphRenderer(container)
+    const resetRenderTypes = () => {
+        const videoData = state.get("videoData")
 
-    const initialCourseCode = Object.values(AVAILABLE_COURSES)[0]
+        const availableRenderTypes = [...AVAILABLE_RENDER_TYPES, ...(videoData ? [NODE_TYPES.VIDEO] : [])]
+        state.set("availableRenderTypes", availableRenderTypes)
+
+        const renderTypes = availableRenderTypes
+        state.set("renderTypes", renderTypes)
+    }
+
+    const app = async () => {
+        const courseCode = state.get("courseCode")
+
+        await loadCourse()
+
+        renderLegend()
+        renderGraph()
+
+        const button = document.querySelector("#quiz button")
+        const buttonClone = button.cloneNode(true);
+        buttonClone.addEventListener('click', async e => {
+            e.preventDefault()
+            // TODO: switch to load from instance id?
+            /* @ts-ignore */
+            // const instance_id = document.querySelector("#quiz input").value
+            let quizResult = null
+            try {
+                const response = await axios.get(`https://quizservice-dev.iu.de/v1/experimental/results/${state.get('courseCode')}/latest`)
+                quizResult = response.data.results
+                /* @ts-ignore */
+                e.target.parentNode.parentNode.querySelector(".notification").innerHTML = 'Results loaded'
+            } catch(Error) {
+                console.error(Error)
+                /* @ts-ignore */
+                e.target.parentNode.parentNode.querySelector(".notification").innerHTML = 'No results found'
+            }
+            state.set('quizResult', quizResult)
+            renderGraph()
+        })
+        button.parentNode.replaceChild(buttonClone, button);
+    }
 
     document.querySelector("#courses").innerHTML = `
         <div class="header"><strong>Courses:</strong></div>
         ${Object.values(AVAILABLE_COURSES).map(course => `
             <div
-                class="${ course === initialCourseCode ? 'entry active': 'entry'}"
+                class="${ course === state.get("courseCode") ? 'entry active': 'entry'}"
                 data-course="${course}"
             >
                 <div
@@ -111,7 +191,7 @@ const main = () => {
     `
 
     document.querySelectorAll("#courses .entry").forEach(element => {
-        element.addEventListener("click", e => {
+        element.addEventListener("click", async e => {
             document.querySelectorAll("#courses .entry").forEach(element => {
                 element.classList.remove("active")
             })
@@ -119,11 +199,14 @@ const main = () => {
             target.classList.add("active")
 
             const courseCode = target.getAttribute("data-course")
-            app(courseCode, graphRenderer)
+            state.set("courseCode", courseCode)
+
+            await loadCourse()
+            renderGraph()
         })
     })
 
-    app(initialCourseCode, graphRenderer)
+    app()
 }
 
 /* @ts-ignore */

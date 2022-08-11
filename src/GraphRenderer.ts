@@ -7,7 +7,16 @@ import * as layout from 'graphology-library/layout';
 
 import drawHover from './hover'
 import { NODE_TYPES } from './consts'
-import { NODE_STATE, NODE_ELEMENT, NODE_COLOR, EDGE_STATE, EDGE_COLOR, SIZE } from './nodeStyle'
+import {
+    RESULT_LEVEL,
+    RESULT_COLOR,
+    NODE_STATE,
+    NODE_ELEMENT,
+    NODE_COLOR,
+    EDGE_STATE,
+    EDGE_COLOR,
+    SIZE
+} from './nodeStyle'
 
 type CustomNode = {
     title: string
@@ -15,6 +24,7 @@ type CustomNode = {
     parents: string[]
     children?: string[]
     link?: string
+    result?: number
 }
 
 type RawData = {
@@ -25,7 +35,8 @@ interface CustomEdgeDisplayData extends EdgeDisplayData {}
 interface CustomNodeDisplayData extends NodeDisplayData {
     nodeType: string,
     labelColor: string,
-    labelBackgroundColor: string
+    labelBackgroundColor: string,
+    result: number
 }
 
 type StateType = {
@@ -90,6 +101,7 @@ const prepareGraph = (graph, courseCode: string, data: RawData) => {
             label: title,
             nodeType: node.type,
             link: link,
+            result: node["result"] >= 0 ? node["result"] : null,
             ...style
         });
     })
@@ -131,9 +143,10 @@ class GraphRenderer {
         courseCode,
         rawData: RawData,
         highlightLevel: number,
-        renderTypes: string[]
+        renderTypes: string[],
+        quizResults = []
     ) => {
-        // reset state
+        // reset states
         state = {...initialState}
 
         // reset graph
@@ -158,11 +171,21 @@ class GraphRenderer {
                 }
             })
         })
+        quizResults.forEach(result => {
+            if (filteredRawData[result.topic_code]) {
+                filteredRawData[result.topic_code]["result"] = (result.correct_count / result.total_count) * 100
+            } else {
+                console.warn(`topic ${result.topic_code} not found`)
+            }
+
+        })
+
         prepareGraph(this.graph, courseCode, filteredRawData)
 
         // reset renderer
         if (this.renderer) {
             this.renderer.kill()
+            this.renderer = null
         }
         this.renderer = new Sigma(
             this.graph,
@@ -254,12 +277,32 @@ class GraphRenderer {
                 }
             }
 
+            // add results to labels
+            const labelMap = {
+                [NODE_STATE.INACTIVE]: '',
+                [NODE_STATE.HOVER]: res.label + (res.result !== null ? ` ${res.result}%` : ""),
+                [NODE_STATE.ACTIVE]: res.label + (res.result !== null ? ` ${res.result}%` : "")
+            }
+
             res.color = NODE_COLOR[res.nodeType][nodeState][NODE_ELEMENT.NODE];
-            res.label = [NODE_STATE.INACTIVE].includes(nodeState) ? "" : res.label
+            res.label = labelMap[nodeState] || res.label
             res.labelColor = NODE_COLOR[res.nodeType][nodeState][NODE_ELEMENT.LABEL];
             res.labelBackgroundColor = NODE_COLOR[res.nodeType][nodeState][NODE_ELEMENT.LABEL_BODY];
             res.forceLabel = [NODE_STATE.ACTIVE, NODE_STATE.CHILD, NODE_STATE.HOVER].includes(nodeState) ? true : false;
             res.highlighted = [NODE_STATE.ACTIVE].includes(nodeState) ? true : false;
+
+            // colors nodes for results
+            if (!(res.result === null)) {
+                if (res.result > 80) {
+                    res.color = RESULT_COLOR[RESULT_LEVEL.SUCCESS]
+                } else
+                if (res.result > 50) {
+                    res.color = RESULT_COLOR[RESULT_LEVEL.WARNING]
+                } else
+                if (res.result >= 0) {
+                    res.color = RESULT_COLOR[RESULT_LEVEL.DANGER]
+                }
+            }
 
             return res;
         })
